@@ -1,0 +1,122 @@
+.dataCenterSec{
+  .dataCenterTtlBox{
+    h2 {
+      color: #0a1e43;
+      font-size: 36px;
+      font-weight: 700;
+  }
+  p {
+    color: #42526e;
+    font-size: 18px;
+  }
+  }
+  .dataCenterWrapper{
+    .dataCenterNavBar{
+      ul{
+        padding: 0;
+        margin: 0 0 40px;
+        display: flex;
+        flex-wrap: nowrap;
+        position: relative;
+       list-style: none;
+       .active{
+        color: #2F39BF;
+        font-size: 20px;
+        margin-bottom:-1px ;
+        background: #FFFFFF;
+        border-bottom: 2px solid #2F39BF;
+        border-radius: 0;
+        transition: all .3s ease-in-out;
+        }
+        .noActive{
+          color: #bf2f2f;
+          font-size: 20px;
+          margin-bottom:-1px ;
+          background: #FFFFFF;
+          border-bottom: 2px solid #bfa52f;
+          border-radius: 0;
+          transition: all .3s ease-in-out;
+        }
+       li {
+        flex: 1;
+        cursor: pointer;
+        padding: 30px 20px;
+        text-align: center;
+        border-bottom: 2px solid rgba(66,82,110,.2);
+        a {
+          color: rgba(66,82,110,.6);
+          font-size: 20px;
+          display: block;
+          text-decoration: none !important;
+          outline: 0 !important;
+      }
+
+      }
+    }
+  }
+  .cardsWrap{
+    display: flex;
+    flex-wrap: wrap;
+    .box{
+      a{
+        text-decoration: none;
+      }
+      width: calc(25% - 20px);
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 6px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      // margin: 0 20px 30px 0;
+      .cardCntryBox{
+         display: flex;
+         justify-content: space-between;
+         padding: 15px;
+         .cardCntryBoxTxt{
+          
+           h3{
+            color: #42526e;
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0;
+            text-transform: capitalize;
+           }
+           p{
+            color: #42526E;
+            font-size: 14px;
+            text-transform: capitalize;
+            margin: 5px 0 0;
+           }
+          
+         }
+         .cardCntryBoxflag{
+           width: 42px;
+           height: 28px;
+           
+         }
+      }
+      .cardPrvdrBox{
+        padding: 10px 15px 5px;
+        background-color: #F7F7F7;
+        ul{
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          display: flex;
+          align-items: center;
+          li{
+            margin-right: 8px;
+            img {
+              height: 20px;
+            }
+          }
+         
+        }
+      }
+    }
+    .hide{
+      display: none !important;
+    }
+  }
+}
+
+}

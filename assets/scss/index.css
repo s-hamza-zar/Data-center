@@ -1,0 +1,143 @@
+.dataCenterSec .dataCenterTtlBox h2 {
+  color: #0a1e43;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.dataCenterSec .dataCenterTtlBox p {
+  color: #42526e;
+  font-size: 18px;
+}
+
+.dataCenterSec .dataCenterWrapper .dataCenterNavBar ul {
+  padding: 0;
+  margin: 0 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
+  list-style: none;
+}
+
+.dataCenterSec .dataCenterWrapper .dataCenterNavBar ul .active {
+  color: #2F39BF;
+  font-size: 20px;
+  margin-bottom: -1px;
+  background: #FFFFFF;
+  border-bottom: 2px solid #2F39BF;
+  border-radius: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.dataCenterSec .dataCenterWrapper .dataCenterNavBar ul .noActive {
+  color: #bf2f2f;
+  font-size: 20px;
+  margin-bottom: -1px;
+  background: #FFFFFF;
+  border-bottom: 2px solid #bfa52f;
+  border-radius: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.dataCenterSec .dataCenterWrapper .dataCenterNavBar ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  cursor: pointer;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 2px solid rgba(66, 82, 110, 0.2);
+}
+
+.dataCenterSec .dataCenterWrapper .dataCenterNavBar ul li a {
+  color: rgba(66, 82, 110, 0.6);
+  font-size: 20px;
+  display: block;
+  text-decoration: none !important;
+  outline: 0 !important;
+}
+
+.dataCenterSec .dataCenterWrapper .cardsWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.dataCenterSec .dataCenterWrapper .cardsWrap .box {
+  width: calc(25% - 20px);
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.dataCenterSec .dataCenterWrapper .cardsWrap .box a {
+  text-decoration: none;
+}
+
+.dataCenterSec .dataCenterWrapper .cardsWrap .box .cardCntryBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+}
+
+.dataCenterSec .dataCenterWrapper .cardsWrap .box .cardCntryBox .cardCntryBoxTxt h3 {
+  color: #42526e;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.dataCenterSec .dataCenterWrapper .cardsWrap .box .cardCntryBox .cardCntryBoxTxt p {
+  color: #42526E;
+  font-size: 14px;
+  text-transform: capitalize;
+  margin: 5px 0 0;
+}
+
+.dataCenterSec .dataCenterWrapper .cardsWrap .box .cardCntryBox .cardCntryBoxflag {
+  width: 42px;
+  height: 28px;
+}
+
+.dataCenterSec .dataCenterWrapper .cardsWrap .box .cardPrvdrBox {
+  padding: 10px 15px 5px;
+  background-color: #F7F7F7;
+}
+
+.dataCenterSec .dataCenterWrapper .cardsWrap .box .cardPrvdrBox ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dataCenterSec .dataCenterWrapper .cardsWrap .box .cardPrvdrBox ul li {
+  margin-right: 8px;
+}
+
+.dataCenterSec .dataCenterWrapper .cardsWrap .box .cardPrvdrBox ul li img {
+  height: 20px;
+}
+
+.dataCenterSec .dataCenterWrapper .cardsWrap .hide {
+  display: none !important;
+}
+/*# sourceMappingURL=index.css.map */
