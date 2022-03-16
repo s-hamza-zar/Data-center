@@ -217,7 +217,7 @@ let data = {
 let obj = data.regions;
 let my_obj = {};
 let finalObj = {};
-
+let loader = document.querySelector(".loader-wrapper");
 const swapFunction = async (obj) => {
   for (const [key, value] of Object.entries(obj)) {
     // console.log(`${key}`);
@@ -253,15 +253,16 @@ const getContry = async (finalObj) => {
     let finalURL =
       "http://api.weatherapi.com/v1/current.json?key=e9651d29e9f94d85bce61916222502&q=";
     // console.log("value",value)
-    const response = await fetch(finalURL + key);
-    const data = await response.json();
-    let contry = data.location.country;
-    let tempFlag = "";
-    dataArray.forEach((item) => {
-      if (item.country.toLowerCase() == contry.toLowerCase()) {
-        tempFlag = item.flag_base64;
-      }
-    });
+   
+      const response = await fetch(finalURL + key);
+      const data = await response.json();
+      let contry = data.location.country;
+      let tempFlag = "";
+      dataArray.forEach((item) => {
+        if (item.country.toLowerCase() == contry.toLowerCase()) {
+          tempFlag = item.flag_base64;
+        }
+      });
     // let tempProviders=[]
     // providersLogosObj.forEach((item,index)=>{
     //   //  console.log("Value",value);
@@ -287,7 +288,10 @@ const getContry = async (finalObj) => {
     };
     countryObj.push(tempObj);
   }
-  console.log(countryObj);
+  
+  if(countryObj.lenght!==0){
+    loader.style.display = "none";
+  }
   displayDataCenterUI(countryObj)
 };
 
